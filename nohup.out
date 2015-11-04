@@ -1,0 +1,241 @@
+[I 150904 11:19:47 command:113] Visit me at http://localhost:5555
+[I 150904 11:19:47 command:115] Broker: amqp://guest:**@localhost:5672//
+[I 150904 11:19:47 command:118] Registered tasks: 
+    ['celery.backend_cleanup',
+     'celery.chain',
+     'celery.chord',
+     'celery.chord_unlock',
+     'celery.chunks',
+     'celery.group',
+     'celery.map',
+     'celery.starmap',
+     'tasks_drift.ftpget',
+     'tasks_drift.ftpput',
+     'tasks_drift.generate_clips',
+     'tasks_drift.generate_xml']
+[I 150904 11:19:47 mixins:225] Connected to amqp://guest:**@127.0.0.1:5672//
+[W 150904 11:19:49 control:44] 'stats' inspect method failed
+[W 150904 11:19:49 control:44] 'active_queues' inspect method failed
+[W 150904 11:19:49 control:44] 'registered' inspect method failed
+[W 150904 11:19:49 control:44] 'scheduled' inspect method failed
+[W 150904 11:19:49 control:44] 'active' inspect method failed
+[W 150904 11:19:49 control:44] 'reserved' inspect method failed
+[W 150904 11:19:49 control:44] 'revoked' inspect method failed
+[W 150904 11:19:49 control:44] 'conf' inspect method failed
+[I 150904 11:19:50 web:1908] 200 GET /tasks?limit=100&worker=All&type=All&state=All&sort=-received&search=&received-start=&received-end=&started-start=&started-end= (::1) 30.45ms
+[I 150904 11:19:51 web:1908] 304 GET /static/css/bootstrap.css?v=7b4cd90ae3b1616f1cf0b93bf5a7769b (::1) 5.29ms
+[I 150904 11:19:51 web:1908] 304 GET /static/css/bootstrap-responsive.css?v=702e8485242b3ae5b4ce75a5ede13acb (::1) 0.39ms
+[I 150904 11:19:51 web:1908] 304 GET /static/css/bootstrap-datetimepicker.min.css?v=7468d8a6368bc2a64ad76bce62b9beb2 (::1) 0.47ms
+[I 150904 11:19:51 web:1908] 304 GET /static/css/flower.css?v=c956fd18aac1e617570f5366d11ad4fd (::1) 0.46ms
+[I 150904 11:19:51 web:1908] 304 GET /static/css/rickshaw.min.css?v=48a108292e153ef3cfb53c32283b3d2c (::1) 0.52ms
+[I 150904 11:19:51 web:1908] 304 GET /static/css/jquery-ui.css?v=11ba5be990454fbbc957fcdf55e339ca (::1) 0.62ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/bootstrap-modal.js?v=5fe4c14f9cbba0a03dfd2cf0a74bb812 (::1) 0.48ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/bootstrap-tab.js?v=ca0b95948cc93f4ec18cc3013726a220 (::1) 0.70ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/bootstrap-dropdown.js?v=f0a761d953362eb3c150f6ac876a4638 (::1) 0.51ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/jquery-1.7.2.min.js?v=b8d64d0bc142b3f670cc0611b0aebcae (::1) 0.37ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/bootstrap-scrollspy.js?v=f7f5435ab136c477b98c1cff0a09c749 (::1) 0.35ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/jquery-ui-1-8-15.min.js?v=88d9f574687d11e3ee3c36b97ac37ffc (::1) 0.49ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/bootstrap-transition.js?v=871f492dffbee74e6a7134159ac6022b (::1) 0.51ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/bootstrap-alert.js?v=12586670237d66f7ddc0ba3c6565faff (::1) 0.46ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/bootstrap-tooltip.js?v=cbba0d4d7ed3f007b8d287f1b5eee7e8 (::1) 0.51ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/bootstrap-popover.js?v=69df927a7b524b87ca3badade4fa4e09 (::1) 0.57ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/bootstrap-button.js?v=8b493affaa8e27831d3162d46807b624 (::1) 0.68ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/bootstrap-collapse.js?v=e8ddac0b5dd49cfbcf7d3ca8b0098d7b (::1) 0.71ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/bootstrap-carousel.js?v=fc8cbc40f39316b8b567b3b96efe9044 (::1) 0.70ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/d3.min.js?v=eb68d3d1035789d336b285373046b550 (::1) 0.63ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/bootstrap-typeahead.js?v=a71319e43efd22bf29161d0e75b892b7 (::1) 0.47ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/d3.layout.min.js?v=4d73dea16077b0d7d128ecf7a4c20752 (::1) 0.54ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/bootstrap-datetimepicker.min.js?v=8880b6a34ee02b5cb6a75f92b3a7ddc9 (::1) 0.60ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/flower.js?v=c8dc7f7da7155241f49556fe1d5640df (::1) 0.60ms
+[I 150904 11:19:51 web:1908] 304 GET /static/js/rickshaw.min.js?v=fc927b6dd64118caa563b711bcb2f130 (::1) 0.43ms
+[I 150904 11:19:51 web:1908] 200 GET /static/favicon.ico?v=fcb9ede4815b4949f75cbead02450a72 (::1) 0.69ms
+[I 150904 11:19:54 web:1908] 304 GET /tasks?limit=100&worker=All&type=All&state=All&sort=-received&search=&received-start=&received-end=&started-start=&started-end= (::1) 1.75ms
+[I 150904 11:19:54 web:1908] 304 GET /static/css/bootstrap.css?v=7b4cd90ae3b1616f1cf0b93bf5a7769b (::1) 0.64ms
+[I 150904 11:19:54 web:1908] 304 GET /static/css/bootstrap-datetimepicker.min.css?v=7468d8a6368bc2a64ad76bce62b9beb2 (::1) 0.51ms
+[I 150904 11:19:54 web:1908] 304 GET /static/css/jquery-ui.css?v=11ba5be990454fbbc957fcdf55e339ca (::1) 0.39ms
+[I 150904 11:19:54 web:1908] 304 GET /static/css/rickshaw.min.css?v=48a108292e153ef3cfb53c32283b3d2c (::1) 0.40ms
+[I 150904 11:19:54 web:1908] 304 GET /static/css/bootstrap-responsive.css?v=702e8485242b3ae5b4ce75a5ede13acb (::1) 0.61ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/jquery-1.7.2.min.js?v=b8d64d0bc142b3f670cc0611b0aebcae (::1) 0.43ms
+[I 150904 11:19:54 web:1908] 304 GET /static/css/flower.css?v=c956fd18aac1e617570f5366d11ad4fd (::1) 0.50ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/bootstrap-dropdown.js?v=f0a761d953362eb3c150f6ac876a4638 (::1) 0.57ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/jquery-ui-1-8-15.min.js?v=88d9f574687d11e3ee3c36b97ac37ffc (::1) 0.47ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/bootstrap-transition.js?v=871f492dffbee74e6a7134159ac6022b (::1) 0.44ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/bootstrap-alert.js?v=12586670237d66f7ddc0ba3c6565faff (::1) 0.44ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/bootstrap-modal.js?v=5fe4c14f9cbba0a03dfd2cf0a74bb812 (::1) 0.59ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/bootstrap-tab.js?v=ca0b95948cc93f4ec18cc3013726a220 (::1) 0.40ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/bootstrap-tooltip.js?v=cbba0d4d7ed3f007b8d287f1b5eee7e8 (::1) 0.46ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/bootstrap-popover.js?v=69df927a7b524b87ca3badade4fa4e09 (::1) 0.44ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/bootstrap-button.js?v=8b493affaa8e27831d3162d46807b624 (::1) 0.41ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/bootstrap-collapse.js?v=e8ddac0b5dd49cfbcf7d3ca8b0098d7b (::1) 0.53ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/bootstrap-scrollspy.js?v=f7f5435ab136c477b98c1cff0a09c749 (::1) 0.40ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/bootstrap-carousel.js?v=fc8cbc40f39316b8b567b3b96efe9044 (::1) 0.45ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/bootstrap-typeahead.js?v=a71319e43efd22bf29161d0e75b892b7 (::1) 0.60ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/d3.min.js?v=eb68d3d1035789d336b285373046b550 (::1) 0.44ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/d3.layout.min.js?v=4d73dea16077b0d7d128ecf7a4c20752 (::1) 0.62ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/rickshaw.min.js?v=fc927b6dd64118caa563b711bcb2f130 (::1) 0.42ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/bootstrap-datetimepicker.min.js?v=8880b6a34ee02b5cb6a75f92b3a7ddc9 (::1) 0.59ms
+[I 150904 11:19:54 web:1908] 304 GET /static/js/flower.js?v=c8dc7f7da7155241f49556fe1d5640df (::1) 0.47ms
+[I 150904 11:19:54 web:1908] 200 GET /static/favicon.ico?v=fcb9ede4815b4949f75cbead02450a72 (::1) 0.57ms
+[I 150904 11:52:43 web:1908] 304 GET /tasks?limit=100&worker=All&type=All&state=All&sort=-received&search=&received-start=&received-end=&started-start=&started-end= (::1) 1.97ms
+[I 150904 11:52:43 web:1908] 304 GET /static/css/bootstrap.css?v=7b4cd90ae3b1616f1cf0b93bf5a7769b (::1) 0.58ms
+[I 150904 11:52:43 web:1908] 304 GET /static/css/bootstrap-responsive.css?v=702e8485242b3ae5b4ce75a5ede13acb (::1) 0.47ms
+[I 150904 11:52:43 web:1908] 304 GET /static/css/rickshaw.min.css?v=48a108292e153ef3cfb53c32283b3d2c (::1) 0.42ms
+[I 150904 11:52:43 web:1908] 304 GET /static/css/jquery-ui.css?v=11ba5be990454fbbc957fcdf55e339ca (::1) 0.44ms
+[I 150904 11:52:43 web:1908] 304 GET /static/css/bootstrap-datetimepicker.min.css?v=7468d8a6368bc2a64ad76bce62b9beb2 (::1) 0.63ms
+[I 150904 11:52:43 web:1908] 304 GET /static/css/flower.css?v=c956fd18aac1e617570f5366d11ad4fd (::1) 0.39ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/jquery-1.7.2.min.js?v=b8d64d0bc142b3f670cc0611b0aebcae (::1) 0.38ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/jquery-ui-1-8-15.min.js?v=88d9f574687d11e3ee3c36b97ac37ffc (::1) 0.42ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/bootstrap-transition.js?v=871f492dffbee74e6a7134159ac6022b (::1) 0.56ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/bootstrap-alert.js?v=12586670237d66f7ddc0ba3c6565faff (::1) 0.43ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/bootstrap-modal.js?v=5fe4c14f9cbba0a03dfd2cf0a74bb812 (::1) 0.43ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/bootstrap-dropdown.js?v=f0a761d953362eb3c150f6ac876a4638 (::1) 0.40ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/bootstrap-tab.js?v=ca0b95948cc93f4ec18cc3013726a220 (::1) 0.54ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/bootstrap-tooltip.js?v=cbba0d4d7ed3f007b8d287f1b5eee7e8 (::1) 0.43ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/bootstrap-popover.js?v=69df927a7b524b87ca3badade4fa4e09 (::1) 0.41ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/bootstrap-button.js?v=8b493affaa8e27831d3162d46807b624 (::1) 0.42ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/bootstrap-collapse.js?v=e8ddac0b5dd49cfbcf7d3ca8b0098d7b (::1) 0.55ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/bootstrap-scrollspy.js?v=f7f5435ab136c477b98c1cff0a09c749 (::1) 0.45ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/bootstrap-carousel.js?v=fc8cbc40f39316b8b567b3b96efe9044 (::1) 0.37ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/bootstrap-typeahead.js?v=a71319e43efd22bf29161d0e75b892b7 (::1) 0.53ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/d3.min.js?v=eb68d3d1035789d336b285373046b550 (::1) 0.36ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/d3.layout.min.js?v=4d73dea16077b0d7d128ecf7a4c20752 (::1) 0.34ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/rickshaw.min.js?v=fc927b6dd64118caa563b711bcb2f130 (::1) 0.34ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/flower.js?v=c8dc7f7da7155241f49556fe1d5640df (::1) 0.57ms
+[I 150904 11:52:43 web:1908] 304 GET /static/js/bootstrap-datetimepicker.min.js?v=8880b6a34ee02b5cb6a75f92b3a7ddc9 (::1) 0.36ms
+[I 150904 11:52:43 web:1908] 200 GET /static/favicon.ico?v=fcb9ede4815b4949f75cbead02450a72 (::1) 0.58ms
+[I 150904 11:58:02 web:1908] 200 GET /tasks?limit=100&worker=All&type=All&state=All&sort=-received&search=&received-start=&received-end=&started-start=&started-end= (::1) 1.70ms
+[I 150904 11:58:02 web:1908] 304 GET /static/css/bootstrap.css?v=7b4cd90ae3b1616f1cf0b93bf5a7769b (::1) 0.48ms
+[I 150904 11:58:02 web:1908] 304 GET /static/css/bootstrap-responsive.css?v=702e8485242b3ae5b4ce75a5ede13acb (::1) 0.37ms
+[I 150904 11:58:02 web:1908] 304 GET /static/css/rickshaw.min.css?v=48a108292e153ef3cfb53c32283b3d2c (::1) 0.35ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/jquery-1.7.2.min.js?v=b8d64d0bc142b3f670cc0611b0aebcae (::1) 0.44ms
+[I 150904 11:58:02 web:1908] 304 GET /static/css/jquery-ui.css?v=11ba5be990454fbbc957fcdf55e339ca (::1) 0.61ms
+[I 150904 11:58:02 web:1908] 304 GET /static/css/bootstrap-datetimepicker.min.css?v=7468d8a6368bc2a64ad76bce62b9beb2 (::1) 0.38ms
+[I 150904 11:58:02 web:1908] 304 GET /static/css/flower.css?v=c956fd18aac1e617570f5366d11ad4fd (::1) 0.33ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/jquery-ui-1-8-15.min.js?v=88d9f574687d11e3ee3c36b97ac37ffc (::1) 0.36ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/bootstrap-transition.js?v=871f492dffbee74e6a7134159ac6022b (::1) 0.39ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/bootstrap-modal.js?v=5fe4c14f9cbba0a03dfd2cf0a74bb812 (::1) 0.62ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/bootstrap-dropdown.js?v=f0a761d953362eb3c150f6ac876a4638 (::1) 0.46ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/bootstrap-scrollspy.js?v=f7f5435ab136c477b98c1cff0a09c749 (::1) 0.50ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/bootstrap-popover.js?v=69df927a7b524b87ca3badade4fa4e09 (::1) 0.37ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/bootstrap-button.js?v=8b493affaa8e27831d3162d46807b624 (::1) 0.46ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/bootstrap-collapse.js?v=e8ddac0b5dd49cfbcf7d3ca8b0098d7b (::1) 0.42ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/bootstrap-tab.js?v=ca0b95948cc93f4ec18cc3013726a220 (::1) 0.38ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/bootstrap-tooltip.js?v=cbba0d4d7ed3f007b8d287f1b5eee7e8 (::1) 0.34ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/bootstrap-carousel.js?v=fc8cbc40f39316b8b567b3b96efe9044 (::1) 0.43ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/bootstrap-typeahead.js?v=a71319e43efd22bf29161d0e75b892b7 (::1) 0.34ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/d3.min.js?v=eb68d3d1035789d336b285373046b550 (::1) 0.34ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/bootstrap-datetimepicker.min.js?v=8880b6a34ee02b5cb6a75f92b3a7ddc9 (::1) 0.59ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/flower.js?v=c8dc7f7da7155241f49556fe1d5640df (::1) 0.36ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/d3.layout.min.js?v=4d73dea16077b0d7d128ecf7a4c20752 (::1) 0.34ms
+[I 150904 11:58:02 web:1908] 304 GET /static/js/rickshaw.min.js?v=fc927b6dd64118caa563b711bcb2f130 (::1) 0.43ms
+[I 150904 11:58:03 web:1908] 304 GET /static/js/bootstrap-alert.js?v=12586670237d66f7ddc0ba3c6565faff (::1) 0.83ms
+[I 150904 11:58:03 web:1908] 200 GET /static/favicon.ico?v=fcb9ede4815b4949f75cbead02450a72 (::1) 0.60ms
+[I 150904 11:58:09 web:1908] 304 GET /tasks?limit=100&worker=All&type=All&state=All&sort=-received&search=&received-start=&received-end=&started-start=&started-end= (::1) 2.39ms
+[I 150904 11:58:11 web:1908] 304 GET /tasks?limit=100&worker=All&type=All&state=All&sort=-received&search=&received-start=&received-end=&started-start=&started-end= (::1) 1.84ms
+[I 150904 11:58:11 web:1908] 304 GET /static/css/bootstrap.css?v=7b4cd90ae3b1616f1cf0b93bf5a7769b (::1) 0.66ms
+[I 150904 11:58:11 web:1908] 304 GET /static/css/rickshaw.min.css?v=48a108292e153ef3cfb53c32283b3d2c (::1) 0.47ms
+[I 150904 11:58:11 web:1908] 304 GET /static/css/bootstrap-responsive.css?v=702e8485242b3ae5b4ce75a5ede13acb (::1) 0.36ms
+[I 150904 11:58:11 web:1908] 304 GET /static/css/bootstrap-datetimepicker.min.css?v=7468d8a6368bc2a64ad76bce62b9beb2 (::1) 0.36ms
+[I 150904 11:58:11 web:1908] 304 GET /static/css/jquery-ui.css?v=11ba5be990454fbbc957fcdf55e339ca (::1) 0.59ms
+[I 150904 11:58:11 web:1908] 304 GET /static/css/flower.css?v=c956fd18aac1e617570f5366d11ad4fd (::1) 0.40ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/jquery-1.7.2.min.js?v=b8d64d0bc142b3f670cc0611b0aebcae (::1) 0.35ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/jquery-ui-1-8-15.min.js?v=88d9f574687d11e3ee3c36b97ac37ffc (::1) 0.37ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/bootstrap-transition.js?v=871f492dffbee74e6a7134159ac6022b (::1) 0.45ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/bootstrap-alert.js?v=12586670237d66f7ddc0ba3c6565faff (::1) 0.37ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/bootstrap-modal.js?v=5fe4c14f9cbba0a03dfd2cf0a74bb812 (::1) 0.34ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/bootstrap-dropdown.js?v=f0a761d953362eb3c150f6ac876a4638 (::1) 0.45ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/bootstrap-tab.js?v=ca0b95948cc93f4ec18cc3013726a220 (::1) 0.39ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/bootstrap-tooltip.js?v=cbba0d4d7ed3f007b8d287f1b5eee7e8 (::1) 0.38ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/bootstrap-popover.js?v=69df927a7b524b87ca3badade4fa4e09 (::1) 0.40ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/bootstrap-button.js?v=8b493affaa8e27831d3162d46807b624 (::1) 0.40ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/bootstrap-collapse.js?v=e8ddac0b5dd49cfbcf7d3ca8b0098d7b (::1) 0.39ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/bootstrap-scrollspy.js?v=f7f5435ab136c477b98c1cff0a09c749 (::1) 0.78ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/bootstrap-carousel.js?v=fc8cbc40f39316b8b567b3b96efe9044 (::1) 0.46ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/bootstrap-typeahead.js?v=a71319e43efd22bf29161d0e75b892b7 (::1) 0.37ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/d3.min.js?v=eb68d3d1035789d336b285373046b550 (::1) 0.58ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/d3.layout.min.js?v=4d73dea16077b0d7d128ecf7a4c20752 (::1) 0.36ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/rickshaw.min.js?v=fc927b6dd64118caa563b711bcb2f130 (::1) 0.38ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/flower.js?v=c8dc7f7da7155241f49556fe1d5640df (::1) 0.35ms
+[I 150904 11:58:11 web:1908] 304 GET /static/js/bootstrap-datetimepicker.min.js?v=8880b6a34ee02b5cb6a75f92b3a7ddc9 (::1) 0.37ms
+[I 150904 11:58:11 web:1908] 200 GET /static/favicon.ico?v=fcb9ede4815b4949f75cbead02450a72 (::1) 0.68ms
+[I 150904 12:07:50 web:1908] 200 GET /tasks?limit=100&worker=All&type=All&state=All&sort=-received&search=&received-start=&received-end=&started-start=&started-end= (::1) 25.15ms
+[I 150904 12:07:50 web:1908] 304 GET /static/css/bootstrap.css?v=7b4cd90ae3b1616f1cf0b93bf5a7769b (::1) 0.49ms
+[I 150904 12:07:50 web:1908] 304 GET /static/css/bootstrap-responsive.css?v=702e8485242b3ae5b4ce75a5ede13acb (::1) 0.37ms
+[I 150904 12:07:50 web:1908] 304 GET /static/css/rickshaw.min.css?v=48a108292e153ef3cfb53c32283b3d2c (::1) 0.37ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/jquery-1.7.2.min.js?v=b8d64d0bc142b3f670cc0611b0aebcae (::1) 0.36ms
+[I 150904 12:07:50 web:1908] 304 GET /static/css/jquery-ui.css?v=11ba5be990454fbbc957fcdf55e339ca (::1) 0.51ms
+[I 150904 12:07:50 web:1908] 304 GET /static/css/bootstrap-datetimepicker.min.css?v=7468d8a6368bc2a64ad76bce62b9beb2 (::1) 0.36ms
+[I 150904 12:07:50 web:1908] 304 GET /static/css/flower.css?v=c956fd18aac1e617570f5366d11ad4fd (::1) 0.34ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/bootstrap-alert.js?v=12586670237d66f7ddc0ba3c6565faff (::1) 0.47ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/jquery-ui-1-8-15.min.js?v=88d9f574687d11e3ee3c36b97ac37ffc (::1) 0.34ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/bootstrap-transition.js?v=871f492dffbee74e6a7134159ac6022b (::1) 0.36ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/bootstrap-tab.js?v=ca0b95948cc93f4ec18cc3013726a220 (::1) 0.42ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/bootstrap-tooltip.js?v=cbba0d4d7ed3f007b8d287f1b5eee7e8 (::1) 0.53ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/bootstrap-popover.js?v=69df927a7b524b87ca3badade4fa4e09 (::1) 0.41ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/bootstrap-modal.js?v=5fe4c14f9cbba0a03dfd2cf0a74bb812 (::1) 0.41ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/bootstrap-dropdown.js?v=f0a761d953362eb3c150f6ac876a4638 (::1) 0.61ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/bootstrap-scrollspy.js?v=f7f5435ab136c477b98c1cff0a09c749 (::1) 0.42ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/bootstrap-button.js?v=8b493affaa8e27831d3162d46807b624 (::1) 0.55ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/bootstrap-collapse.js?v=e8ddac0b5dd49cfbcf7d3ca8b0098d7b (::1) 0.43ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/bootstrap-carousel.js?v=fc8cbc40f39316b8b567b3b96efe9044 (::1) 0.54ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/bootstrap-typeahead.js?v=a71319e43efd22bf29161d0e75b892b7 (::1) 0.44ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/d3.min.js?v=eb68d3d1035789d336b285373046b550 (::1) 0.34ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/d3.layout.min.js?v=4d73dea16077b0d7d128ecf7a4c20752 (::1) 0.51ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/rickshaw.min.js?v=fc927b6dd64118caa563b711bcb2f130 (::1) 0.48ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/bootstrap-datetimepicker.min.js?v=8880b6a34ee02b5cb6a75f92b3a7ddc9 (::1) 0.40ms
+[I 150904 12:07:50 web:1908] 304 GET /static/js/flower.js?v=c8dc7f7da7155241f49556fe1d5640df (::1) 0.38ms
+[I 150904 12:07:50 web:1908] 200 GET /static/favicon.ico?v=fcb9ede4815b4949f75cbead02450a72 (::1) 0.57ms
+[I 150908 16:56:38 web:1908] 200 GET /tasks?limit=100&worker=All&type=All&state=All&sort=-received&search=&received-start=&received-end=&started-start=&started-end= (::1) 37.02ms
+[I 150908 16:56:38 web:1908] 304 GET /static/css/bootstrap.css?v=7b4cd90ae3b1616f1cf0b93bf5a7769b (::1) 2.02ms
+[I 150908 16:56:38 web:1908] 304 GET /static/css/bootstrap-responsive.css?v=702e8485242b3ae5b4ce75a5ede13acb (::1) 0.61ms
+[I 150908 16:56:38 web:1908] 304 GET /static/css/rickshaw.min.css?v=48a108292e153ef3cfb53c32283b3d2c (::1) 0.68ms
+[I 150908 16:56:38 web:1908] 304 GET /static/css/jquery-ui.css?v=11ba5be990454fbbc957fcdf55e339ca (::1) 1.74ms
+[I 150908 16:56:38 web:1908] 304 GET /static/css/bootstrap-datetimepicker.min.css?v=7468d8a6368bc2a64ad76bce62b9beb2 (::1) 0.65ms
+[I 150908 16:56:38 web:1908] 304 GET /static/css/flower.css?v=c956fd18aac1e617570f5366d11ad4fd (::1) 0.60ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/jquery-1.7.2.min.js?v=b8d64d0bc142b3f670cc0611b0aebcae (::1) 0.91ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/jquery-ui-1-8-15.min.js?v=88d9f574687d11e3ee3c36b97ac37ffc (::1) 0.75ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/bootstrap-transition.js?v=871f492dffbee74e6a7134159ac6022b (::1) 0.56ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/bootstrap-alert.js?v=12586670237d66f7ddc0ba3c6565faff (::1) 0.60ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/bootstrap-modal.js?v=5fe4c14f9cbba0a03dfd2cf0a74bb812 (::1) 0.67ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/bootstrap-dropdown.js?v=f0a761d953362eb3c150f6ac876a4638 (::1) 0.57ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/bootstrap-scrollspy.js?v=f7f5435ab136c477b98c1cff0a09c749 (::1) 0.47ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/bootstrap-tab.js?v=ca0b95948cc93f4ec18cc3013726a220 (::1) 0.68ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/bootstrap-tooltip.js?v=cbba0d4d7ed3f007b8d287f1b5eee7e8 (::1) 0.47ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/bootstrap-button.js?v=8b493affaa8e27831d3162d46807b624 (::1) 0.47ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/bootstrap-popover.js?v=69df927a7b524b87ca3badade4fa4e09 (::1) 0.62ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/d3.layout.min.js?v=4d73dea16077b0d7d128ecf7a4c20752 (::1) 0.62ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/bootstrap-collapse.js?v=e8ddac0b5dd49cfbcf7d3ca8b0098d7b (::1) 1.53ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/bootstrap-carousel.js?v=fc8cbc40f39316b8b567b3b96efe9044 (::1) 0.45ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/bootstrap-typeahead.js?v=a71319e43efd22bf29161d0e75b892b7 (::1) 0.40ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/d3.min.js?v=eb68d3d1035789d336b285373046b550 (::1) 0.48ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/bootstrap-datetimepicker.min.js?v=8880b6a34ee02b5cb6a75f92b3a7ddc9 (::1) 0.55ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/flower.js?v=c8dc7f7da7155241f49556fe1d5640df (::1) 0.50ms
+[I 150908 16:56:38 web:1908] 304 GET /static/js/rickshaw.min.js?v=fc927b6dd64118caa563b711bcb2f130 (::1) 1.52ms
+[I 150908 16:56:39 web:1908] 200 GET /static/favicon.ico?v=fcb9ede4815b4949f75cbead02450a72 (::1) 1.72ms
+[I 150909 10:58:30 web:1908] 200 GET /tasks?limit=100&worker=All&type=All&state=All&sort=-received&search=&received-start=&received-end=&started-start=&started-end= (::1) 21.71ms
+[I 150909 10:58:30 web:1908] 304 GET /static/css/bootstrap.css?v=7b4cd90ae3b1616f1cf0b93bf5a7769b (::1) 2.02ms
+[I 150909 10:58:30 web:1908] 304 GET /static/css/bootstrap-responsive.css?v=702e8485242b3ae5b4ce75a5ede13acb (::1) 1.41ms
+[I 150909 10:58:30 web:1908] 304 GET /static/css/rickshaw.min.css?v=48a108292e153ef3cfb53c32283b3d2c (::1) 0.46ms
+[I 150909 10:58:30 web:1908] 304 GET /static/css/jquery-ui.css?v=11ba5be990454fbbc957fcdf55e339ca (::1) 0.70ms
+[I 150909 10:58:30 web:1908] 304 GET /static/css/bootstrap-datetimepicker.min.css?v=7468d8a6368bc2a64ad76bce62b9beb2 (::1) 0.73ms
+[I 150909 10:58:30 web:1908] 304 GET /static/css/flower.css?v=c956fd18aac1e617570f5366d11ad4fd (::1) 0.90ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/jquery-1.7.2.min.js?v=b8d64d0bc142b3f670cc0611b0aebcae (::1) 0.79ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/jquery-ui-1-8-15.min.js?v=88d9f574687d11e3ee3c36b97ac37ffc (::1) 0.65ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/bootstrap-scrollspy.js?v=f7f5435ab136c477b98c1cff0a09c749 (::1) 0.46ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/bootstrap-transition.js?v=871f492dffbee74e6a7134159ac6022b (::1) 0.54ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/bootstrap-dropdown.js?v=f0a761d953362eb3c150f6ac876a4638 (::1) 0.56ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/bootstrap-modal.js?v=5fe4c14f9cbba0a03dfd2cf0a74bb812 (::1) 0.57ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/bootstrap-alert.js?v=12586670237d66f7ddc0ba3c6565faff (::1) 0.50ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/bootstrap-tooltip.js?v=cbba0d4d7ed3f007b8d287f1b5eee7e8 (::1) 0.44ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/bootstrap-tab.js?v=ca0b95948cc93f4ec18cc3013726a220 (::1) 0.50ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/bootstrap-typeahead.js?v=a71319e43efd22bf29161d0e75b892b7 (::1) 0.48ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/d3.min.js?v=eb68d3d1035789d336b285373046b550 (::1) 0.50ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/bootstrap-popover.js?v=69df927a7b524b87ca3badade4fa4e09 (::1) 0.42ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/bootstrap-button.js?v=8b493affaa8e27831d3162d46807b624 (::1) 0.40ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/bootstrap-collapse.js?v=e8ddac0b5dd49cfbcf7d3ca8b0098d7b (::1) 0.52ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/bootstrap-carousel.js?v=fc8cbc40f39316b8b567b3b96efe9044 (::1) 0.43ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/d3.layout.min.js?v=4d73dea16077b0d7d128ecf7a4c20752 (::1) 0.42ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/rickshaw.min.js?v=fc927b6dd64118caa563b711bcb2f130 (::1) 0.42ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/bootstrap-datetimepicker.min.js?v=8880b6a34ee02b5cb6a75f92b3a7ddc9 (::1) 0.48ms
+[I 150909 10:58:30 web:1908] 304 GET /static/js/flower.js?v=c8dc7f7da7155241f49556fe1d5640df (::1) 0.45ms
+[I 150909 10:58:30 web:1908] 200 GET /static/favicon.ico?v=fcb9ede4815b4949f75cbead02450a72 (::1) 1.62ms

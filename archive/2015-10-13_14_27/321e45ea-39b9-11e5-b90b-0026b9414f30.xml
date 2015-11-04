@@ -1,0 +1,56 @@
+<video>
+    <arcnamespace>mtv</arcnamespace>
+    <seriesuuid>7a42c856-d237-11e1-a549-0026b9414f30</seriesuuid>
+	<episodeuuid>7f156210-2b7d-11e5-b90b-0026b9414f30</episodeuuid>
+	<videoplaylistuuid>63677afc-39b6-11e5-b90b-0026b9414f30</videoplaylistuuid>
+	<showvideouuid>321e45ea-39b9-11e5-b90b-0026b9414f30</showvideouuid>
+	<type>showvideo</type>
+    <workflowtype>posterclip</workflowtype>
+    <title><![CDATA[S2 ]]></title>
+    <duration>10</duration>
+    <lang>eng</lang>
+    <images>
+        <image>
+            <title><![CDATA[S2 ]]></title>
+            <imagetype>645fd648-9697-47c0-b01e-415e4f2b4e45</imagetype>
+            <imageassets>
+                <imageasset>
+                    <imageuri>mgid:file:gsp:alias:/gsp-alias/mediabus/mtv.com/2015/07/30/07/13/881096/5837126_881096_20150730071331720_640x360_10secs.jpg</imageuri>
+                    <width>640</width>
+                    <height>360</height>
+                    <format>1ae36ce7-2b9e-4c03-a26b-dabe940de56a</format>
+                    <aspectratio>16:9</aspectratio>
+                </imageasset>
+                <imageasset>
+                    <imageuri>mgid:file:gsp:alias:/gsp-alias/mediabus/mtv.com/2015/07/30/07/13/881096/5837126_881096_20150730071331720_384x216_10secs.jpg</imageuri>
+                    <width>384</width>
+                    <height>216</height>
+                    <format>1ae36ce7-2b9e-4c03-a26b-dabe940de56a</format>
+                    <aspectratio>16:9</aspectratio>
+               </imageasset>
+            </imageassets>
+        </image>
+    </images>
+    <videoassets>
+        <videoasset>
+            <lang>eng</lang>
+            <uri>mgid:file:gsp:alias:/gsp-alias/mediabus/mtv.com/2015/07/30/07/13/881096/5837126_881096_20150730071331720_640x360_1200_m30_10secs.mp4</uri>
+            <width>640</width>
+            <height>360</height>
+            <bitrate>1200</bitrate>
+            <format>787e4200-a2fa-102e-b731-0026b9419ed3</format>
+            <duration>10</duration>
+            <aspectratio>16:9</aspectratio>
+        </videoasset>
+        <videoasset>
+            <lang>eng</lang>
+            <uri>mgid:file:gsp:alias:/gsp-alias/mediabus/mtv.com/2015/07/30/07/13/881096/5837126_881096_20150730071331720_384x216_400_m30_10secs.mp4</uri>
+            <width>384</width>
+            <height>216</height>
+            <bitrate>400</bitrate>
+            <format>787e4200-a2fa-102e-b731-0026b9419ed3</format>
+            <duration>10</duration>
+            <aspectratio>16:9</aspectratio>
+        </videoasset>
+    </videoassets>
+</video>

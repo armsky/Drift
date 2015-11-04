@@ -1,0 +1,55 @@
+<video>
+    <arcnamespace>mtv-intl-latinamerica</arcnamespace>
+	<episodeuuid>9722c038-d238-11e1-a549-0026b9414f30</episodeuuid>
+	<videoplaylistuuid>9281b821-5c86-4010-90c6-47fe9c9e5646</videoplaylistuuid>
+	<showvideouuid>ba9716f6-168f-11e5-b90b-0026b9414f30</showvideouuid>
+	<type>showvideo</type>
+    <workflowtype>posterclip</workflowtype>
+    <title><![CDATA[I Used to be Fat: " Maddy " S2]]></title>
+    <duration>10</duration>
+    <lang>spa</lang>
+    <images>
+        <image>
+            <title><![CDATA[I Used to be Fat: " Maddy " S2]]></title>
+            <imagetype>645fd648-9697-47c0-b01e-415e4f2b4e45</imagetype>
+            <imageassets>
+                <imageasset>
+                    <imageuri>mgid:file:gsp:alias:/gsp-alias/mediabus/mtv-intl-latinamerica.com/2015/06/19/10/30/38232070/IUF116A2_232070_3854605_576x432_10secs.jpg</imageuri>
+                    <width>576</width>
+                    <height>432</height>
+                    <format>1ae36ce7-2b9e-4c03-a26b-dabe940de56a</format>
+                    <aspectratio>4:3</aspectratio>
+                </imageasset>
+                <imageasset>
+                    <imageuri>mgid:file:gsp:alias:/gsp-alias/mediabus/mtv-intl-latinamerica.com/2015/06/19/10/30/38232070/IUF116A2_232070_3854605_384x288_10secs.jpg</imageuri>
+                    <width>384</width>
+                    <height>288</height>
+                    <format>1ae36ce7-2b9e-4c03-a26b-dabe940de56a</format>
+                    <aspectratio>4:3</aspectratio>
+               </imageasset>
+            </imageassets>
+        </image>
+    </images>
+    <videoassets>
+        <videoasset>
+            <lang>spa</lang>
+            <uri>mgid:file:gsp:alias:/gsp-alias/mediabus/mtv-intl-latinamerica.com/2015/06/19/10/30/38232070/IUF116A2_232070_3854605_576x432_1200_m30_10secs.mp4</uri>
+            <width>576</width>
+            <height>432</height>
+            <bitrate>1200</bitrate>
+            <format>787e4200-a2fa-102e-b731-0026b9419ed3</format>
+            <duration>10</duration>
+            <aspectratio>4:3</aspectratio>
+        </videoasset>
+        <videoasset>
+            <lang>spa</lang>
+            <uri>mgid:file:gsp:alias:/gsp-alias/mediabus/mtv-intl-latinamerica.com/2015/06/19/10/30/38232070/IUF116A2_232070_3854605_384x288_400_m30_10secs.mp4</uri>
+            <width>384</width>
+            <height>288</height>
+            <bitrate>400</bitrate>
+            <format>787e4200-a2fa-102e-b731-0026b9419ed3</format>
+            <duration>10</duration>
+            <aspectratio>4:3</aspectratio>
+        </videoasset>
+    </videoassets>
+</video>

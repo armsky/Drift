@@ -1,0 +1,12 @@
+{
+  "report": {
+    "unique_key": "NewShowVideoUUID",
+    "workflowtype": "posterclip",
+    "asset_status": "success/error",
+    "videoplaylistuuid": "VideoPlayListUUID",
+    "episodeuuid": "EpisodeUUID",
+    "showvideouuid": "ShowVideoUUID",
+    "arcnamespace": "Arcnamespace",
+    "error_spec": "AdditionalErrorDesc"
+  }
+}
