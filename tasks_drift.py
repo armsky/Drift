@@ -23,7 +23,7 @@ class SqlAlchemyTask(app.Task):
     """An abstract Celery Task that ensures that the connection to the
     database is closed on task completion"""
     @staticmethod
-    def after_return(self, status, retval, task_id, args, kwargs, einfo):
+    def after_return(status, retval, task_id, args, kwargs, einfo):
         db_session.remove()
 
 
@@ -144,6 +144,7 @@ def generate_clips(videoid):
             video_command = ["ffmpeg", "-i", video_path, "-ss", str(inpoint), "-to", str(outpoint), "-an",
                             "-maxrate", "600k", "-bufsize", "1200k", "-profile:v", "baseline", "-level", "3.1",
                             "-f", "mp4", "-movflags", "+faststart", destpath]
+            print video_command
             subprocess.Popen(video_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()
             print "10 seconds clip generated"
             clip_uri = os.path.join(server_folder, destpath.split("/")[-1])
