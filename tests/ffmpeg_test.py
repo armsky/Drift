@@ -42,3 +42,6 @@ class FfmpegTest(unittest.TestCase):
             print video_command
             subprocess.Popen(video_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()
             print "10 seconds clip generated"
+
+if __name__ == '__main__':
+    unittest.main()
