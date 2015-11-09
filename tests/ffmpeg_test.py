@@ -4,7 +4,7 @@ import shutil
 import sys
 import subprocess
 import logging
-sys.path.insert(0, os.path.abspath('../'))
+sys.path.append(os.path.join(os.path.dirname(__file__), os.pardir))
 from db_drift import Videos, db_session
 from settings import FTP_ENTRY
 
@@ -16,7 +16,7 @@ class FfmpegTest(unittest.TestCase):
     video = db_session.query(Videos).filter_by(showvideouuid="048e9908-7155-11e5-8ff7-0026b9414f30").first()
 
     def test_clip_generation(self):
-        log= logging.getLogger("FfmpegTest.test_clip_generation")
+        log = logging.getLogger("FfmpegTest.test_clip_generation")
         self.assertIsInstance(self.video, Videos)
         video = self.video
 
@@ -24,12 +24,15 @@ class FfmpegTest(unittest.TestCase):
         video_path_1200 = os.path.join(os.getcwd(), "temp", video.showvideouuid, video.uri_1200.split("/")[-1])
         video_path_400 = os.path.join(os.getcwd(), "temp", video.showvideouuid, video.uri_400.split("/")[-1])
         lang = video.lang
+        self.assertTrue(os.path.isfile(video_path_400))
         command = ["ffprobe", "-v", "error", "-show_entries", "format=duration",
                    "-of", "default=noprint_wrappers=1:nokey=1", video_path_400]
-        process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        process = subprocess.Popen(command)
         second_string = process.communicate()[0]
+        self.assertIsNone(second_string)
         log.debug("%s", second_string)
         seconds = int(float(str(second_string).strip()))
+        self.assertEquals(seconds, 10)
         print seconds
 
         inpoint = seconds - 11
@@ -48,5 +51,5 @@ class FfmpegTest(unittest.TestCase):
 
 if __name__ == '__main__':
     logging.basicConfig(stream=sys.stderr)
-    logging.getLogger( "FfmpegTest.test_clip_generation" ).setLevel( logging.DEBUG )
+    logging.getLogger("FfmpegTest.test_clip_generation").setLevel(logging.DEBUG)
     unittest.main()
