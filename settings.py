@@ -1,7 +1,7 @@
 __author__ = 'Hao Lin'
 
 # Database options are: 'DBA_LIVE', 'DBA_QA', 'DBA_DEV', 'LOCALHOST', '204'
-DATABASE_OPTION = "204"
+DATABASE_OPTION = "DBA_LIVE"
 
 # Download & upload method options are: 'FTP', 'MOUNT'
 DOWNLOAD_UPLOAD_METHOD = "MOUNT"
