@@ -111,7 +111,7 @@ def generate_clips(videoid):
         video_path_1200 = os.path.join(os.getcwd(), "temp", video.showvideouuid, video.uri_1200.split("/")[-1])
         video_path_400 = os.path.join(os.getcwd(), "temp", video.showvideouuid, video.uri_400.split("/")[-1])
         lang = video.lang
-        print video_path_400, video_path_1200
+        print os.path.isfile(video_path_400), os.path.isfile(video_path_1200)
         # Find the total seconds first
         command = ["ffprobe", "-v", "error", "-show_entries", "format=duration",
                    "-of", "default=noprint_wrappers=1:nokey=1", video_path_400]
