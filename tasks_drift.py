@@ -106,7 +106,7 @@ def localcopy(videoid, folder_path):
 def generate_clips(videoid):
     try:
         video = db_session.query(Videos).filter_by(id=videoid).first()
-        print video, video.id, video
+        print video.id,
         server_folder = '/'.join(video.uri_1200.split("/")[:-1])
         video_path_1200 = os.path.join(os.getcwd(), "temp", video.showvideouuid, video.uri_1200.split("/")[-1])
         video_path_400 = os.path.join(os.getcwd(), "temp", video.showvideouuid, video.uri_400.split("/")[-1])
@@ -115,10 +115,12 @@ def generate_clips(videoid):
         # Find the total seconds first
         command = ["ffprobe", "-v", "error", "-show_entries", "format=duration",
                    "-of", "default=noprint_wrappers=1:nokey=1", video_path_400]
+        print command
         process = subprocess.Popen(command)
         #, stdout=subprocess.PIPE, stderr=subprocess.PIPE
         second_string = process.communicate()[0]
         seconds = int(float(str(second_string).strip()))
+        print seconds
         if seconds < 11:
             # TODO: Save this error to DB
             db_session.add(Logs(videoid, "Video duration less than 10 secs."))
