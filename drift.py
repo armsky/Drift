@@ -279,8 +279,8 @@ def X(data):
 
 # query_arc()
 fix()
-cleanup()
-process_xml()
+# cleanup()
+# process_xml()
 process_video()
-# download()
+download()
 
