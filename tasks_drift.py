@@ -106,6 +106,7 @@ def localcopy(videoid, folder_path):
 def generate_clips(videoid):
     try:
         video = db_session.query(Videos).filter_by(id=videoid).first()
+        print video
         server_folder = '/'.join(video.uri_1200.split("/")[:-1])
         video_path_1200 = os.path.join(os.getcwd(), "temp", video.showvideouuid, video.uri_1200.split("/")[-1])
         video_path_400 = os.path.join(os.getcwd(), "temp", video.showvideouuid, video.uri_400.split("/")[-1])

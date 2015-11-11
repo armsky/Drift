@@ -23,7 +23,6 @@ class FfmpegTest(unittest.TestCase):
         server_folder = '/'.join(video.uri_1200.split("/")[:-1])
         video_path_1200 = os.path.join(os.path.join(os.path.dirname(__file__), os.pardir), "temp", video.showvideouuid, video.uri_1200.split("/")[-1])
         video_path_400 = os.path.join(os.path.join(os.path.dirname(__file__), os.pardir), "temp", video.showvideouuid, video.uri_400.split("/")[-1])
-        self.assertEquals(video_path_400, '')
         lang = video.lang
         self.assertTrue(os.path.isfile(video_path_400))
         command = ["ffprobe", "-v", "error", "-show_entries", "format=duration",
