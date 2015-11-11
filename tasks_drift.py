@@ -115,7 +115,8 @@ def generate_clips(videoid):
         # Find the total seconds first
         command = ["ffprobe", "-v", "error", "-show_entries", "format=duration",
                    "-of", "default=noprint_wrappers=1:nokey=1", video_path_400]
-        process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        process = subprocess.Popen(command)
+        #, stdout=subprocess.PIPE, stderr=subprocess.PIPE
         second_string = process.communicate()[0]
         seconds = int(float(str(second_string).strip()))
         if seconds < 11:
