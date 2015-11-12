@@ -6,7 +6,8 @@ import urllib2
 import shutil
 import json
 from db_drift import db_session, Videos, Logs, STATES
-from settings import FTP_ENTRY, MAX_DOWNLOADS, MAX_UPLOADS, MAX_FFMPEG, DOWNLOAD_UPLOAD_METHOD
+from settings import FTP_ENTRY, MAX_DOWNLOADS, MAX_UPLOADS, MAX_FFMPEG, DOWNLOAD_UPLOAD_METHOD, \
+    SEVER_OPTION, XML_DROP_PATH
 
 __author__ = 'Hao Lin'
 
@@ -205,6 +206,11 @@ def process_xml():
             # Archive the XMLs in batch
             archive_batch_folder = os.path.join("archive", time_string)
             shutil.copytree(batch_folder, archive_batch_folder)
+            # Drop all XMLs to ARC process in batch
+            drop_path = XML_DROP_PATH[SEVER_OPTION]
+            drop_batch_folder = os.path.join(drop_path, time_string)
+            shutil.copytree(batch_folder, drop_batch_folder)
+
     except socket_error:
         # TODO: rabbitMQ not running or port not right, save to database
         print "RabbitMQ connection refused"
@@ -280,7 +286,7 @@ def X(data):
 # query_arc()
 fix()
 # cleanup()
-# process_xml()
+process_xml()
 process_video()
-download()
+# download()
 

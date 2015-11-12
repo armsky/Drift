@@ -111,13 +111,11 @@ def generate_clips(videoid):
         video_path_1200 = os.path.join(os.getcwd(), "temp", video.showvideouuid, video.uri_1200.split("/")[-1])
         video_path_400 = os.path.join(os.getcwd(), "temp", video.showvideouuid, video.uri_400.split("/")[-1])
         lang = video.lang
-        print os.path.isfile(video_path_400), os.path.isfile(video_path_1200)
         # Find the total seconds first
         command = ["ffprobe", "-v", "error", "-show_entries", "format=duration",
                    "-of", "default=noprint_wrappers=1:nokey=1", video_path_400]
         print command
-        process = subprocess.Popen(command)
-        #, stdout=subprocess.PIPE, stderr=subprocess.PIPE
+        process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         second_string = process.communicate()[0]
         seconds = int(float(str(second_string).strip()))
         print seconds
@@ -192,6 +190,7 @@ def generate_clips(videoid):
         # TODO: Catch SQLAlchemy errors
         pass
     except ValueError, e:
+        print e
         # Will find "No such file or directory" need re-download
         # Delete the record and folder on disk, reprocess it from step 1
         folder_path = "temp/" + video.showvideouuid
@@ -202,7 +201,7 @@ def generate_clips(videoid):
             for log in logs:
                 print log.id
             db_session.delete(logs)
-        db_session.delete(video)
+        video.stateid = STATES["Video Logged"]
         db_session.commit()
         pass
     except SoftTimeLimitExceeded:

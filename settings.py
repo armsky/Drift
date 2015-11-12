@@ -1,10 +1,19 @@
 __author__ = 'Hao Lin'
 
 # Database options are: 'DBA_LIVE', 'DBA_QA', 'DBA_DEV', 'LOCALHOST', '204'
-DATABASE_OPTION = "DBA_LIVE"
+DATABASE_OPTION = "204"
 
 # Download & upload method options are: 'FTP', 'MOUNT'
-DOWNLOAD_UPLOAD_METHOD = "MOUNT"
+DOWNLOAD_UPLOAD_METHOD = "FTP"
+
+# App server options are: 'local_macbook', '204', 'PlayPlex'
+SEVER_OPTION = "local_macbook"
+
+XML_DROP_PATH = {
+    "local_macbook":    "/Volumes/TobeProcessed/",
+    "204":              "/mnt/arc/drift/",
+    "PlayPlex":         "/arc/drift/"
+}
 
 FTP_CREDENTIAL = {
     "HOST": "gsprelay.viacom.com",
