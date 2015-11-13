@@ -239,3 +239,22 @@
 [I 150909 10:58:30 web:1908] 304 GET /static/js/bootstrap-datetimepicker.min.js?v=8880b6a34ee02b5cb6a75f92b3a7ddc9 (::1) 0.48ms
 [I 150909 10:58:30 web:1908] 304 GET /static/js/flower.js?v=c8dc7f7da7155241f49556fe1d5640df (::1) 0.45ms
 [I 150909 10:58:30 web:1908] 200 GET /static/favicon.ico?v=fcb9ede4815b4949f75cbead02450a72 (::1) 1.62ms
+
+              RabbitMQ 3.5.3. Copyright (C) 2007-2014 GoPivotal, Inc.
+  ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
+  ##  ##
+  ##########  Logs: /usr/local/var/log/rabbitmq/rabbit@localhost.log
+  ######  ##        /usr/local/var/log/rabbitmq/rabbit@localhost-sasl.log
+  ##########
+              Starting broker... completed with 10 plugins.
+
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+
+              RabbitMQ 3.5.3. Copyright (C) 2007-2014 GoPivotal, Inc.
+  ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
+  ##  ##
+  ##########  Logs: /usr/local/var/log/rabbitmq/rabbit@localhost.log
+  ######  ##        /usr/local/var/log/rabbitmq/rabbit@localhost-sasl.log
+  ##########
+              Starting broker... completed with 10 plugins.

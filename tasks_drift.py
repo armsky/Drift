@@ -34,7 +34,6 @@ def ftpget(videoid, folder_path):
         print "video id is: " + str(video.id)
         if video.hostentry != "mtviestor":
             ftp = FTP(CREDENTIAL["HOST"], CREDENTIAL["USER"], CREDENTIAL["PASS"])
-            print ftp
         else:
             ENTRY = settings.FTP_ENTRY
             ftp = FTP(ENTRY["mtviestor"]["HOST"], ENTRY["mtviestor"]["USER"], ENTRY["mtviestor"]["PASS"])
@@ -114,11 +113,9 @@ def generate_clips(videoid):
         # Find the total seconds first
         command = ["ffprobe", "-v", "error", "-show_entries", "format=duration",
                    "-of", "default=noprint_wrappers=1:nokey=1", video_path_400]
-        print command
         process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         second_string = process.communicate()[0]
         seconds = int(float(str(second_string).strip()))
-        print seconds
         if seconds < 11:
             # TODO: Save this error to DB
             db_session.add(Logs(videoid, "Video duration less than 10 secs."))
@@ -147,7 +144,6 @@ def generate_clips(videoid):
             video_command = ["ffmpeg", "-i", video_path, "-ss", str(inpoint), "-to", str(outpoint), "-an",
                             "-maxrate", "600k", "-bufsize", "1200k", "-profile:v", "baseline", "-level", "3.1",
                             "-f", "mp4", "-movflags", "+faststart", destpath]
-            print video_command
             subprocess.Popen(video_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()
             print "10 seconds clip generated"
             clip_uri = os.path.join(server_folder, destpath.split("/")[-1])
@@ -225,7 +221,6 @@ def ftpput(videoid, folder_path):
             to_upload.append(videoasset.uri)
         for imageasset in imageassets:
             to_upload.append(imageasset.uri)
-        # print to_upload
         if to_upload and len(to_upload) == 4:
             for filepath in to_upload:
                 filename = filepath.split("/")[-1]

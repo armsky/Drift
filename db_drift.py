@@ -72,6 +72,7 @@ class Videos(Base):
     uri_400 = Column(String(256), nullable=False)
     lang = Column(String(8), nullable=False)
     hostentry = Column(String(16), nullable=True)
+    last_modified = Column(DateTime, onupdate=func.utc_timestamp())
 
     def __init__(self, stateid, title, namespace, showvideouuid, videoplaylistuuid, episodeuuid, seriesuuid,
                  uri_1200, uri_400, lang, hostentry=None):

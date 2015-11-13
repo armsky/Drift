@@ -210,6 +210,8 @@ def process_xml():
             drop_path = XML_DROP_PATH[SEVER_OPTION]
             drop_batch_folder = os.path.join(drop_path, time_string)
             shutil.copytree(batch_folder, drop_batch_folder)
+            for video in videos:
+                video.stateid = STATES["Xml Sent To ARC"]
 
     except socket_error:
         # TODO: rabbitMQ not running or port not right, save to database
@@ -285,8 +287,8 @@ def X(data):
 
 # query_arc()
 fix()
-# cleanup()
+cleanup()
 process_xml()
 process_video()
-# download()
+download()
 
