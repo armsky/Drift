@@ -182,6 +182,7 @@ class Reports(Base):
     posteruuid = Column(String(36), nullable=False, primary_key=True)
     status = Column(String(16), nullable=False)
     error_spec = Column(String(512), nullable=True)
+    last_modified = Column(DateTime, onupdate=func.utc_timestamp())
 
     def __init__(self, videoid, showvideouuid, status, error_spec):
         self.videoid = videoid
